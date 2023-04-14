@@ -1,7 +1,7 @@
 {
 	"name": "@mryasuo/react-chat-window-ui",
 	"homepage": "https://github.com/MrYasuo/react-chat-window-ui.git",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"type": "module",
 	"main": "src/index.js",
 	"scripts": {
