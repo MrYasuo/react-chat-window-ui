@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import React, { useMemo } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import ChatWindow from "./ChatWindow";
 import launcherIcon from "@/assets/logo-no-bg.svg";
 import incomingMessageSound from "@/assets/sounds/notification.mp3";
@@ -13,15 +13,15 @@ const Launcher = (props) => {
 		audio.play();
 	};
 
-	useMemo(() => {
+	useEffect(() => {
 		if (props.mute) return;
 		const nextMessage = props.messageList[props.messageList.length - 1];
 		const isIncoming = (nextMessage || {}).author === "them";
-		const isNew = props.messageList.length > this.props.messageList.length;
+		const isNew = props.messageList.length > props.messageList.length;
 		if (isIncoming && isNew) {
 			playIncomingMessageSound();
 		}
-	}, [...props]);
+	}, [JSON.stringify(props.messageList)]);
 
 	const handleClick = (args) => {
 		if (props.handleClick) return props.handleClick(args);
