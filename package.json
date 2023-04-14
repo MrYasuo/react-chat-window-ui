@@ -1,6 +1,5 @@
 {
-	"name": "test-react-chat-window",
-	"private": true,
+	"name": "react-chat-window-ui",
 	"version": "0.0.0",
 	"type": "module",
 	"main": "src/index.js",
