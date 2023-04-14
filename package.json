@@ -8,6 +8,10 @@
 		"build": "vite build",
 		"preview": "vite preview"
 	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	},
 	"dependencies": {
 		"emoji-js": "3.7.0",
 		"gh-pages": "^5.0.0",
