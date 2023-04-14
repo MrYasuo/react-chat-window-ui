@@ -1,14 +1,22 @@
 {
 	"name": "@mryasuo/react-chat-window-ui",
 	"homepage": "https://github.com/MrYasuo/react-chat-window-ui.git",
-	"version": "0.0.5",
+	"version": "0.1.1",
 	"type": "module",
-	"main": "./dist/react-chat-window-ui.es.umd.js",
-	"module": "./dist/react-chat-window-ui.es.es.js",
+	"main": "./src/main.jsx",
+	"module": "./dist/react-chat-window-ui.es.js",
+	"files": [
+		"dist",
+		"README.md"
+	],
 	"exports": {
 		".": {
 			"import": "./dist/react-chat-window-ui.es.js",
-			"require": "./dist/react-chat-window-ui.es.umd.js"
+			"require": "./dist/react-chat-window-ui.umd.js"
+		},
+		"./dist/style.css": {
+			"import": "./dist/style.css",
+			"require": "./dist/style.css"
 		}
 	},
 	"scripts": {
@@ -32,15 +40,15 @@
 	"devDependencies": {
 		"@testing-library/dom": "^9.2.0",
 		"@testing-library/react": "^14.0.0",
-		"@types/react": "^18.0.28",
+		"@types/react": "^18.0.35",
 		"@types/react-dom": "^18.0.11",
-		"@vitejs/plugin-react-swc": "^3.0.0",
+		"@vitejs/plugin-react-swc": "^3.3.0",
 		"c8": "^7.13.0",
 		"eslint": "^8.38.0",
 		"eslint-plugin-react": "^7.32.2",
 		"jsdom": "^21.1.1",
 		"react-test-renderer": "^18.2.0",
-		"vite": "^4.2.0",
+		"vite": "^4.2.1",
 		"vitest": "^0.30.1"
 	}
 }
