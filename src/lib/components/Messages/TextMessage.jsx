@@ -1,9 +1,10 @@
 import React from "react";
+import Linkify from "react-linkify";
 
 const TextMessage = (props) => {
 	return (
 		<div className="sc-message--text">
-			{<a target="_blank">{props.data.text}</a>}
+			<Linkify properties={{ target: "_blank" }}>{props.data.text}</Linkify>
 		</div>
 	);
 };
