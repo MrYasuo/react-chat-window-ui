@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Launcher } from "@mryasuo/react-chat-window-ui";
-import "@mryasuo/react-chat-window-ui/dist/style.css";
+import { Launcher } from "./lib";
+import "./lib/styles";
 
 function App() {
 	const [messageList, setMessageList] = useState([]);
