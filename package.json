@@ -5,7 +5,7 @@
 		"type": "git",
 		"url": "https://github.com/MrYasuo/react-chat-window-ui.git"
 	},
-	"version": "0.1.8",
+	"version": "0.1.9",
 	"type": "module",
 	"main": "./dist/react-chat-window-ui.umd.js",
 	"module": "./dist/react-chat-window-ui.es.js",
